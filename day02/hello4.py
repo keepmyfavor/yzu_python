@@ -18,3 +18,20 @@ print("成本: %.1f" % cost)
 print("買進 %s %d 股 花費成本 $%.1f 帳戶餘額 $%.1f" % (stock, amount, cost, account))
 print("買進 %s %d 股 花費成本 $%.1f 帳戶餘額 $%s" % (stock, amount, cost, format(account, ",")))
 print("買進 %s %d 股 花費成本 $%.1f 帳戶餘額 $%s" % (stock, amount, cost, format(int(account*10)/10, ",")))
+
+txt = "a={}, b={}".format(12345, 67890)
+print(txt)
+txt = "a={:,}, b={}".format(12345, 67890)
+print(txt)
+
+# 不足補 0
+rate1 = 2.321
+rate2 = 32.123
+rate3 = 641.567
+print("%07.3f" % rate1)  # 共7位數含小數3位, 不足補0
+print("%08.3f" % rate2)  # 共8位數含小數3位, 不足補0
+print("%010.3f" % rate3)  # 共10位數含小數3位, 不足補0
+
+name = "python"
+version = 3.6
+print("Output : {0} {1}".format(name, version))
