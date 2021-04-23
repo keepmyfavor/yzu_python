@@ -21,6 +21,10 @@ print("買進 %s %d 股 花費成本 $%.1f 帳戶餘額 $%s" % (stock, amount, c
 
 txt = "a={}, b={}".format(12345, 67890)
 print(txt)
+
+txt = "{}, {}".format(12345, 67890)
+print(txt)
+
 txt = "a={:,}, b={}".format(12345, 67890)
 print(txt)
 
@@ -35,3 +39,5 @@ print("%010.3f" % rate3)  # 共10位數含小數3位, 不足補0
 name = "python"
 version = 3.6
 print("Output : {0} {1}".format(name, version))
+
+
