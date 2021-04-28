@@ -10,8 +10,14 @@ import math
 
 def printBMI(h, w):
     bmi = w / math.pow(h/100, 2)
-    result = "過重" if bmi > 23 else ("過輕" if bmi < 18 else "正常")
-    print("h=%.1f w=%.1f bmi=%.2f %s" % (h, w, bmi, result))
+    # result = "過重" if bmi > 23 else ("過輕" if bmi < 18 else "正常")
+    # result = "過重" if bmi > 23 else "過輕" if bmi < 18 else "正常"
+    result = "正常"
+    if bmi > 23:
+        result = "過重"
+    elif bmi < 18:
+        result = "過輕"
+    print("h=%.1f w=%.1f bmi=%.2f 計算結果=%s" % (h, w, bmi, result))
 
 
 printBMI(170, 50)
