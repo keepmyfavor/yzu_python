@@ -5,12 +5,9 @@ min = 0
 max = 100
 count = 5
 
-while True:
-    if count == 0:
-        print("次數超過")
-        break
+while count > 0:
+    print("還有%d次機會" % count)
     guess = int(input("請輸入%d ~ %d: " % (min, max)))
-
     # 檢查 guess 的資料是否在 min 與 max 之間
     if guess <= min or guess >= max:
         print("數字範圍錯誤")
@@ -24,3 +21,4 @@ while True:
         print("答對了")
         break
     count -= 1
+print("超過次數了,遊戲結束了,答案是%d" % ans)
