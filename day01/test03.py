@@ -1,3 +1,7 @@
+# Linux /etc/hosts
+# https://www.php.cn/linux-440040.html
+# https://blog.csdn.net/hguisu/article/details/49278355
+# https://support.huaweicloud.com/trouble-ecs/ecs_trouble_0320.html
 
 # for i in range(1, 10):
 #     for j in range(10, i, -1):
